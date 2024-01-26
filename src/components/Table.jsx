@@ -1,5 +1,6 @@
 import React from 'react';
 import avatar from '../assets/avatar.png';
+import file from '../assets/file.svg'
 import { order } from '../../data';
 
 const Table = () => {
@@ -32,7 +33,10 @@ const Table = () => {
                 <td className="font-jakarta-sans p-3 tracking-wide whitespace-nowrap text-base font-normal text-[#737373]">{item.date}</td>
                 <td className="font-jakarta-sans p-3 tracking-wide whitespace-nowrap text-base font-medium text-[#0D062D]">${item.amount}</td>
                 <td className="font-jakarta-sans p-3 tracking-wide whitespace-nowrap text-base font-normal" style={{ color: `${item.color}` }}>{item.status}</td>
-                <td className="font-jakarta-sans p-3 tracking-wide whitespace-nowrap text-[14px] font-normal text-[#0D062D]">View</td>
+                <td className="font-jakarta-sans p-3 tracking-wide whitespace-nowrap text-[14px] font-normal text-[#0D062D] flex flex-row gap-2">
+                  <img src={file} alt="" />
+                  <p>View</p>
+                  </td>
               </tr>
             ))}
           </tbody>

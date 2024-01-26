@@ -56,11 +56,11 @@ const CustomBarChart = () => {
 
   return (
     <div className="flex-2 px-5 py-4 border-2 border-[#EDF2F7] shadow-sm rounded-2xl w-full lg:w-3/5 bg-white">
-      <div className=" text-gray-500 flex flex-row items-center justify-between px-2 mb-4">
-        <h1 className='font-jakarta-sans text-[#26282C] font-semibold text-[18px] font-medium'>Sales Trends</h1>
-        <div className='flex items-center gap-2'>
-          <label htmlFor="dropdown" className='text-[#3A3F51] font-jakarta-sans text-[14px]'>Sort by:</label>
-          <select id="dropdown" value={selectedOption} onChange={handleChange} className="font-jakarta-sans font-normal border border-[#E1DFDF] text-3 py-2 px-2 rounded-3xl focus:outline-none">
+      <div className=" text-gray-500 flex flex-row items-center justify-between md:px-2 mb-4">
+        <h1 className='font-jakarta-sans text-[#26282C] font-semibold text-[12px] md:text-[18px] font-medium'>Sales Trends</h1>
+        <div className='flex items-center md:gap-2'>
+          <label htmlFor="dropdown" className='text-[#3A3F51] font-jakarta-sans text-[12px] md:text-[14px]'>Sort by:</label>
+          <select id="dropdown" value={selectedOption} onChange={handleChange} className="font-jakarta-sans font-normal border border-[#E1DFDF] text-[12px] py-2 md:px-2 rounded-3xl focus:outline-none">
             <option value="option1">Monthly</option>
             <option value="">Yearly</option>
             <option value="option2">Weekly</option>

@@ -6,20 +6,12 @@ export default {
   ],
   theme: {
     screens: {
+      'xs': '281px',
       'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
       'lg': '1161px',
-      // => @media (min-width: 1024px) { ... }
-
       'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
       '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
     },
     extend: {
       display: ['responsive', 'group-hover', 'group-focus'],
