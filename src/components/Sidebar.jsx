@@ -2,7 +2,6 @@ import React from 'react';
 import vector from '../assets/Vector.svg'
 import menu from '../assets/menu.svg'
 import graph from '../assets/graph.svg'
-import icon from '../assets/icon.svg'
 import box from '../assets/box.svg'
 import setting from '../assets/setting.svg'
 import sun from '../assets/sun.svg'
