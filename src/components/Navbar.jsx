@@ -9,7 +9,7 @@ const Navbar = ({ toggleSidebar}) => {
 
   
   return (
-    <header className='p-4 flex justify-between items-center bg-[#FAFAFA] border-b-2 border-[#E5EAEF]'>
+    <header className='p-4 flex justify-between items-center bg-[#FAFAFA] border-b-2 border-[#E5EAEF] gap-4 md:gap-0'>
       <section className='flex flex-row items-center justify-between w-2/3 gap-2'>
       <div className="flex flex-row items-center gap-2">
             <button type="button" className="md:hidden"
@@ -22,7 +22,7 @@ const Navbar = ({ toggleSidebar}) => {
             </button>
         <h1 className="font-jakarta-sans font-semibold text-sm md:text-2xl">Dashboard</h1>
         </div>
-        <div className="flex items-center border rounded-3xl px-4 md:mr-28 mdpy-1 w-1/5 md:w-2/5 md:h-[48px] bg-white">
+        <div className="flex items-center border rounded-3xl px-4 md:mr-28 mdpy-1 w-2/5 md:w-2/5 md:h-[48px] bg-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
