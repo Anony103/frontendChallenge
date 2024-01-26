@@ -1,7 +1,7 @@
 import React from 'react';
 import { report } from '../../data';
 
-const Widget = ({ type }) => {
+const Widget = () => {
   return (
     <div className='flex flex-col w-[100%] lg:w-2/5 md:flex-row flex-wrap gap-4'>
       {report.map((item, index) => (

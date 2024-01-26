@@ -60,7 +60,7 @@ const CustomBarChart = () => {
         <h1 className='font-jakarta-sans text-[#26282C] font-semibold text-[18px] font-medium'>Sales Trends</h1>
         <div className='flex items-center gap-2'>
           <label htmlFor="dropdown" className='text-[#3A3F51] font-jakarta-sans text-[14px]'>Sort by:</label>
-          <select id="dropdown" value={selectedOption} onChange={handleChange} className="font-jakarta-sans font-normal border border-[#E1DFDF] text-3 py-2 px-1 rounded-3xl focus:outline-none">
+          <select id="dropdown" value={selectedOption} onChange={handleChange} className="font-jakarta-sans font-normal border border-[#E1DFDF] text-3 py-2 px-2 rounded-3xl focus:outline-none">
             <option value="option1">Monthly</option>
             <option value="">Yearly</option>
             <option value="option2">Weekly</option>
@@ -69,7 +69,7 @@ const CustomBarChart = () => {
         </div>
       </div>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart width="100%" height={1000} data={data} barCategoryGap={20} barGap={5}>
+        <BarChart width="100%" height={1000} data={data} barCategoryGap={15} barGap={5}>
           <defs>
             <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor="#34CAA5" stopOpacity={0.8} />
