@@ -7,7 +7,6 @@ import pic from '../assets/pic.png'
 
 const Navbar = ({ toggleSidebar}) => {
 
-  
   return (
     <header className='p-4 flex justify-between items-center bg-[#FAFAFA] border-b-2 border-[#E5EAEF] gap-4 md:gap-0'>
       <section className='flex flex-row items-center justify-between w-2/3 gap-2'>
@@ -50,7 +49,7 @@ const Navbar = ({ toggleSidebar}) => {
         </div>
         <div className='flex flex-row items-center border rounded-full border-[#DADDDD] md:px-2 md:gap-2'>
             <div className='text-right flex flex-row items-center gap-1'>
-                <img src={pic} alt="" />
+                <img src={pic} alt="" className='w-8 rounded-full'/>
                 <div className='hidden md:flex flex-col'>
                 <p className='font-jakarta-sans font-normal text-base'>Justin Bergson</p>
                 <p className='font-jakarta-sans font-normal text-[14px]'>Justin@gmail.com</p>

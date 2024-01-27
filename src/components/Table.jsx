@@ -27,7 +27,7 @@ const Table = () => {
             {order.map((item, index) => (
               <tr className='border-b' key={index}>
                 <td className="font-jakarta-sans w-48 md:w-30 p-4 tracking-wide whitespace-nowrap text-base font-medium text-[#3A3F51] flex items-center gap-2">
-                  <img src={avatar} alt="" />
+                  <img src={item.img} alt="" className='w-8 rounded-full'/>
                   <h2>{item.name}</h2>
                 </td>
                 <td className="font-jakarta-sans p-3 tracking-wide whitespace-nowrap text-base font-normal text-[#737373]">{item.date}</td>

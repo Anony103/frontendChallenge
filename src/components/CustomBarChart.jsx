@@ -8,6 +8,7 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
+  Rectangle
 } from 'recharts';
 
 const data = [
@@ -50,8 +51,22 @@ const CustomBarChart = () => {
 
   const [selectedOption, setSelectedOption] = useState('');
 
+  const [opacity, setOpacity] = useState({
+    month: 1,
+  });
+
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
+  };
+
+  const handleMouseEnter = (o) => {
+    const { dataKey } = o;
+    setOpacity({ ...opacity, [dataKey]: 0.5 });
+  };
+
+  const handleMouseLeave = (o) => {
+    const { dataKey } = o;
+    setOpacity({ ...opacity, [dataKey]: 1 });
   };
 
   return (
@@ -83,8 +98,11 @@ const CustomBarChart = () => {
             cursor={{ fill: 'transparent' }}
             content={<CustomTooltip />}
           />
-          <Legend />
-          <Bar dataKey="month" fill="rgb(52,202,165,0.1)" radius={[30, 30, 0, 0]} />
+          <Legend
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+          <Bar dataKey="month" fill="rgb(52,202,165,0.1)" radius={[30, 30, 0, 0]} activeBar={<Rectangle fill="url(#colorGradient)" />}/>
         </BarChart>
       </ResponsiveContainer>
     </div>

@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import Home from '../src/pages/Home'
-// import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Sales from './pages/Sales'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Home/>
-    </>
+    <React.Fragment>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/sale' element={<Sales/>}/>
+
+      </Routes>
+    </React.Fragment>
   )
 }
 

@@ -10,6 +10,18 @@ import moon from '../assets/moon.svg'
 import ing from '../assets/ing.svg'
 import setting1 from '../assets/setting1.svg'
 import out from '../assets/out.svg'
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+
+export const Linked = styled(NavLink)`
+  &.active {
+    border-right-color: #0D062D;
+    border-right-width: 6px;
+  }
+`;
+
+
+
 
 
 const Sidebar = ({ isSidebarOpen }) => {
@@ -21,12 +33,12 @@ const Sidebar = ({ isSidebarOpen }) => {
         <img src={vector} alt="" className='w-10 h-10' />
         </div>
       <nav className="p-4 flex flex-col items-center gap-5">
-        <ul className='flex flex-col gap-5'>
+        <ul className='flex flex-col items-center gap-5'>
+            <Linked to="/" activeClassName="active" className="w-full pr-4 ml-7">
           <li className="">
-            <a href="#" className="text-white hover:text-gray-400">
-            <img src={menu} alt="" className='w-10 h-10' />
-            </a>
+            <img src={menu} alt="" className='w-6 h-6' />
           </li>
+            </Linked>
           <li className="">
             <a href="#" className="text-white hover:text-gray-400">
             <img src={graph} alt="" className='w-10 h-10' />

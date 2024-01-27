@@ -6,7 +6,11 @@ import rotate from './src/assets/rotate.svg';
 import boxtick from './src/assets/boxtick.svg';
 import coin from './src/assets/coin.svg';
 import cart from './src/assets/cart.svg';
-
+import image from './src/assets/image.png';
+import image1 from './src/assets/image1.png';
+import image2 from './src/assets/image2.png';
+import image3 from './src/assets/image3.png';
+import image4 from './src/assets/image4.png';
 
 export const platform = [
     {
@@ -42,7 +46,7 @@ export const platform = [
 export const order = [
     {
         id:1,
-        img:'',
+        img:image,
         name:'Marcus Bergson',
         date:'Nov 15, 2023',
         amount:'80,000',
@@ -51,7 +55,7 @@ export const order = [
     },
     {
         id:2,
-        img:'',
+        img:image1,
         name:'Jaydon Vaccaro',
         date:'Nov 15, 2023',
         amount:'150,000',
@@ -60,7 +64,7 @@ export const order = [
     },
     {
         id:3,
-        img:'',
+        img:image2,
         name:'Corey Schleifer',
         date:'Nov 14, 2023',
         amount:'87,000',
@@ -69,7 +73,7 @@ export const order = [
     },
     {
         id:4,
-        img:'',
+        img:image3,
         name:'Corey Press',
         date:'Nov 14, 2023',
         amount:'100,000',
@@ -78,7 +82,7 @@ export const order = [
     },
     {
         id:5,
-        img:'',
+        img:image4,
         name:'Phillip Lubin',
         date:'Nov 13, 2023',
         amount:'78,000',
